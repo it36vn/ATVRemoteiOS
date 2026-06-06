@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EBD8B2A2FCAE0C600ED1B71 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBD8B292FCAE0C600ED1B71 /* FirebaseRemoteConfig */; };
+		0EBD8B2C2FCAE4A400ED1B71 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBD8B2B2FCAE4A400ED1B71 /* FirebaseAuth */; };
+		0EBD8B362FCAED4100ED1B71 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBD8B352FCAED4100ED1B71 /* GoogleSignIn */; };
+		0EBD8B382FCAED4100ED1B71 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBD8B372FCAED4100ED1B71 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EB3D3E62FCAA3E4009E8BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EB3D3D02FCAA3E3009E8BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB3D3D72FCAA3E3009E8BBB;
+			remoteInfo = "TCL Remote";
+		};
+		0EB3D3F02FCAA3E4009E8BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EB3D3D02FCAA3E3009E8BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB3D3D72FCAA3E3009E8BBB;
+			remoteInfo = "TCL Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EB3D3D82FCAA3E3009E8BBB /* Remote TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB3D3E52FCAA3E4009E8BBB /* Remote TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remote TVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB3D3EF2FCAA3E4009E8BBB /* Remote TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remote TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0EB3D3DA2FCAA3E3009E8BBB /* Remote TV */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Remote TV";
+			sourceTree = "<group>";
+		};
+		0EB3D3E82FCAA3E4009E8BBB /* TCL RemoteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TCL RemoteTests";
+			sourceTree = "<group>";
+		};
+		0EB3D3F22FCAA3E4009E8BBB /* TCL RemoteUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TCL RemoteUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EB3D3D52FCAA3E3009E8BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBD8B2A2FCAE0C600ED1B71 /* FirebaseRemoteConfig in Frameworks */,
+				0EBD8B2C2FCAE4A400ED1B71 /* FirebaseAuth in Frameworks */,
+				0EBD8B362FCAED4100ED1B71 /* GoogleSignIn in Frameworks */,
+				0EBD8B382FCAED4100ED1B71 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB3D3E22FCAA3E4009E8BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB3D3EC2FCAA3E4009E8BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB3D3CF2FCAA3E3009E8BBB = {
+			isa = PBXGroup;
+			children = (
+				0EB3D3DA2FCAA3E3009E8BBB /* Remote TV */,
+				0EB3D3E82FCAA3E4009E8BBB /* TCL RemoteTests */,
+				0EB3D3F22FCAA3E4009E8BBB /* TCL RemoteUITests */,
+				0EBD8B282FCAE0C600ED1B71 /* Frameworks */,
+				0EB3D3D92FCAA3E3009E8BBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EB3D3D92FCAA3E3009E8BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EB3D3D82FCAA3E3009E8BBB /* Remote TV.app */,
+				0EB3D3E52FCAA3E4009E8BBB /* Remote TVTests.xctest */,
+				0EB3D3EF2FCAA3E4009E8BBB /* Remote TVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EBD8B282FCAE0C600ED1B71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EB3D3D72FCAA3E3009E8BBB /* Remote TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB3D3F92FCAA3E4009E8BBB /* Build configuration list for PBXNativeTarget "Remote TV" */;
+			buildPhases = (
+				0EB3D3D42FCAA3E3009E8BBB /* Sources */,
+				0EB3D3D52FCAA3E3009E8BBB /* Frameworks */,
+				0EB3D3D62FCAA3E3009E8BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0EB3D3DA2FCAA3E3009E8BBB /* Remote TV */,
+			);
+			name = "Remote TV";
+			packageProductDependencies = (
+				0EBD8B292FCAE0C600ED1B71 /* FirebaseRemoteConfig */,
+				0EBD8B2B2FCAE4A400ED1B71 /* FirebaseAuth */,
+				0EBD8B352FCAED4100ED1B71 /* GoogleSignIn */,
+				0EBD8B372FCAED4100ED1B71 /* GoogleSignInSwift */,
+			);
+			productName = "TCL Remote";
+			productReference = 0EB3D3D82FCAA3E3009E8BBB /* Remote TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0EB3D3E42FCAA3E4009E8BBB /* Remote TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB3D3FC2FCAA3E4009E8BBB /* Build configuration list for PBXNativeTarget "Remote TVTests" */;
+			buildPhases = (
+				0EB3D3E12FCAA3E4009E8BBB /* Sources */,
+				0EB3D3E22FCAA3E4009E8BBB /* Frameworks */,
+				0EB3D3E32FCAA3E4009E8BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EB3D3E72FCAA3E4009E8BBB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0EB3D3E82FCAA3E4009E8BBB /* TCL RemoteTests */,
+			);
+			name = "Remote TVTests";
+			packageProductDependencies = (
+			);
+			productName = "TCL RemoteTests";
+			productReference = 0EB3D3E52FCAA3E4009E8BBB /* Remote TVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0EB3D3EE2FCAA3E4009E8BBB /* Remote TVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB3D3FF2FCAA3E4009E8BBB /* Build configuration list for PBXNativeTarget "Remote TVUITests" */;
+			buildPhases = (
+				0EB3D3EB2FCAA3E4009E8BBB /* Sources */,
+				0EB3D3EC2FCAA3E4009E8BBB /* Frameworks */,
+				0EB3D3ED2FCAA3E4009E8BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EB3D3F12FCAA3E4009E8BBB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0EB3D3F22FCAA3E4009E8BBB /* TCL RemoteUITests */,
+			);
+			name = "Remote TVUITests";
+			packageProductDependencies = (
+			);
+			productName = "TCL RemoteUITests";
+			productReference = 0EB3D3EF2FCAA3E4009E8BBB /* Remote TVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EB3D3D02FCAA3E3009E8BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					0EB3D3D72FCAA3E3009E8BBB = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					0EB3D3E42FCAA3E4009E8BBB = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 0EB3D3D72FCAA3E3009E8BBB;
+					};
+					0EB3D3EE2FCAA3E4009E8BBB = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 0EB3D3D72FCAA3E3009E8BBB;
+					};
+				};
+			};
+			buildConfigurationList = 0EB3D3D32FCAA3E3009E8BBB /* Build configuration list for PBXProject "Remote TV" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = 0EB3D3CF2FCAA3E3009E8BBB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0EBD8B272FCAE09A00ED1B71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0EBD8B302FCAE97C00ED1B71 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				0E28D2812FD4027D006E4BF5 /* XCRemoteSwiftPackageReference "StagingLog" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0EB3D3D92FCAA3E3009E8BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EB3D3D72FCAA3E3009E8BBB /* Remote TV */,
+				0EB3D3E42FCAA3E4009E8BBB /* Remote TVTests */,
+				0EB3D3EE2FCAA3E4009E8BBB /* Remote TVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EB3D3D62FCAA3E3009E8BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB3D3E32FCAA3E4009E8BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB3D3ED2FCAA3E4009E8BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EB3D3D42FCAA3E3009E8BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB3D3E12FCAA3E4009E8BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB3D3EB2FCAA3E4009E8BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EB3D3E72FCAA3E4009E8BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EB3D3D72FCAA3E3009E8BBB /* Remote TV */;
+			targetProxy = 0EB3D3E62FCAA3E4009E8BBB /* PBXContainerItemProxy */;
+		};
+		0EB3D3F12FCAA3E4009E8BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EB3D3D72FCAA3E3009E8BBB /* Remote TV */;
+			targetProxy = 0EB3D3F02FCAA3E4009E8BBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EB3D3F72FCAA3E4009E8BBB /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-Production";
+		};
+		0EB3D3F82FCAA3E4009E8BBB /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Production";
+		};
+		0EB3D3FA2FCAA3E4009E8BBB /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 0EB3D3DA2FCAA3E3009E8BBB /* Remote TV */;
+			baseConfigurationReferenceRelativePath = Configs/production.xcconfig;
+			buildSettings = {
+				APP_BUNDLE_ID = "$(APP_BUNDLE_ID)";
+				APP_DISPLAY_NAME = "$(APP_DISPLAY_NAME)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(APP_BUILD)";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G5JYWDP3TY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TCL-Remote-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Remote TV";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = "Ứng dụng cần quyền để hiển thị quảng cáo.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Ứng dụng cần truy cập mạng nội bộ để quét và kết nối Android TV trong cùng Wi-Fi.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ứng dụng cần truy cập micro để tìm kiếm bằng giọng nói.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Ứng dụng cần quyền truy cập để tìm kiếm bằng giọng nói";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(APP_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.it36vn.androidRemoteTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Android Remote TV Develop";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-Production";
+		};
+		0EB3D3FB2FCAA3E4009E8BBB /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 0EB3D3DA2FCAA3E3009E8BBB /* Remote TV */;
+			baseConfigurationReferenceRelativePath = Configs/production.xcconfig;
+			buildSettings = {
+				APP_BUNDLE_ID = "$(APP_BUNDLE_ID)";
+				APP_DISPLAY_NAME = "$(APP_DISPLAY_NAME)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(APP_BUILD)";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G5JYWDP3TY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TCL-Remote-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Remote TV";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = "Ứng dụng cần quyền để hiển thị quảng cáo.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Ứng dụng cần truy cập mạng nội bộ để quét và kết nối Android TV trong cùng Wi-Fi.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ứng dụng cần truy cập micro để tìm kiếm bằng giọng nói.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Ứng dụng cần quyền truy cập để tìm kiếm bằng giọng nói";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(APP_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.it36vn.androidRemoteTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Android Remote TV Release";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-Production";
+		};
+		0EB3D3FD2FCAA3E4009E8BBB /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remote TV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Remote TV";
+			};
+			name = "Debug-Production";
+		};
+		0EB3D3FE2FCAA3E4009E8BBB /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remote TV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Remote TV";
+			};
+			name = "Release-Production";
+		};
+		0EB3D4002FCAA3E4009E8BBB /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TCL Remote";
+			};
+			name = "Debug-Production";
+		};
+		0EB3D4012FCAA3E4009E8BBB /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TCL Remote";
+			};
+			name = "Release-Production";
+		};
+		0EB3D42B2FCAADCD009E8BBB /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-Staging";
+		};
+		0EB3D42C2FCAADCD009E8BBB /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 0EB3D3DA2FCAA3E3009E8BBB /* Remote TV */;
+			baseConfigurationReferenceRelativePath = Configs/staging.xcconfig;
+			buildSettings = {
+				APP_BUNDLE_ID = "$(APP_BUNDLE_ID)";
+				APP_DISPLAY_NAME = "$(APP_DISPLAY_NAME)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(APP_BUILD)";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G5JYWDP3TY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TCL-Remote-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Remote TV";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = "Ứng dụng cần quyền để hiển thị quảng cáo.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Ứng dụng cần truy cập mạng nội bộ để quét và kết nối Android TV trong cùng Wi-Fi.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ứng dụng cần truy cập micro để tìm kiếm bằng giọng nói.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Ứng dụng cần quyền truy cập để tìm kiếm bằng giọng nói";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(APP_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.it36vn.androidRemoteTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Android Remote TV Develop";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-Staging";
+		};
+		0EB3D42D2FCAADCD009E8BBB /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remote TV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Remote TV";
+			};
+			name = "Debug-Staging";
+		};
+		0EB3D42E2FCAADCD009E8BBB /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TCL Remote";
+			};
+			name = "Debug-Staging";
+		};
+		0EB3D42F2FCAADD6009E8BBB /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Staging";
+		};
+		0EB3D4302FCAADD6009E8BBB /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 0EB3D3DA2FCAA3E3009E8BBB /* Remote TV */;
+			baseConfigurationReferenceRelativePath = Configs/staging.xcconfig;
+			buildSettings = {
+				APP_BUNDLE_ID = "$(APP_BUNDLE_ID)";
+				APP_DISPLAY_NAME = "$(APP_DISPLAY_NAME)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(APP_BUILD)";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = G5JYWDP3TY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TCL-Remote-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Remote TV";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = "Ứng dụng cần quyền để hiển thị quảng cáo.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Ứng dụng cần truy cập mạng nội bộ để quét và kết nối Android TV trong cùng Wi-Fi.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ứng dụng cần truy cập micro để tìm kiếm bằng giọng nói.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Ứng dụng cần quyền truy cập để tìm kiếm bằng giọng nói";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(APP_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.it36vn.androidRemoteTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Android Remote TV Develop";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-Staging";
+		};
+		0EB3D4312FCAADD6009E8BBB /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remote TV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Remote TV";
+			};
+			name = "Release-Staging";
+		};
+		0EB3D4322FCAADD6009E8BBB /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.it36vn.TCL-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TCL Remote";
+			};
+			name = "Release-Staging";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EB3D3D32FCAA3E3009E8BBB /* Build configuration list for PBXProject "Remote TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB3D3F72FCAA3E4009E8BBB /* Debug-Production */,
+				0EB3D42B2FCAADCD009E8BBB /* Debug-Staging */,
+				0EB3D3F82FCAA3E4009E8BBB /* Release-Production */,
+				0EB3D42F2FCAADD6009E8BBB /* Release-Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-Production";
+		};
+		0EB3D3F92FCAA3E4009E8BBB /* Build configuration list for PBXNativeTarget "Remote TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB3D3FA2FCAA3E4009E8BBB /* Debug-Production */,
+				0EB3D42C2FCAADCD009E8BBB /* Debug-Staging */,
+				0EB3D3FB2FCAA3E4009E8BBB /* Release-Production */,
+				0EB3D4302FCAADD6009E8BBB /* Release-Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-Production";
+		};
+		0EB3D3FC2FCAA3E4009E8BBB /* Build configuration list for PBXNativeTarget "Remote TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB3D3FD2FCAA3E4009E8BBB /* Debug-Production */,
+				0EB3D42D2FCAADCD009E8BBB /* Debug-Staging */,
+				0EB3D3FE2FCAA3E4009E8BBB /* Release-Production */,
+				0EB3D4312FCAADD6009E8BBB /* Release-Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-Production";
+		};
+		0EB3D3FF2FCAA3E4009E8BBB /* Build configuration list for PBXNativeTarget "Remote TVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB3D4002FCAA3E4009E8BBB /* Debug-Production */,
+				0EB3D42E2FCAADCD009E8BBB /* Debug-Staging */,
+				0EB3D4012FCAA3E4009E8BBB /* Release-Production */,
+				0EB3D4322FCAADD6009E8BBB /* Release-Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-Production";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E28D2812FD4027D006E4BF5 /* XCRemoteSwiftPackageReference "StagingLog" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/it36vn/StagingLog";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		0EBD8B272FCAE09A00ED1B71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+		0EBD8B302FCAE97C00ED1B71 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EBD8B292FCAE0C600ED1B71 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBD8B272FCAE09A00ED1B71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		0EBD8B2B2FCAE4A400ED1B71 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBD8B272FCAE09A00ED1B71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0EBD8B352FCAED4100ED1B71 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBD8B302FCAE97C00ED1B71 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		0EBD8B372FCAED4100ED1B71 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBD8B302FCAE97C00ED1B71 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0EB3D3D02FCAA3E3009E8BBB /* Project object */;
+}

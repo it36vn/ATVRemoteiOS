@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AdMobAppID</key>
+	<string>$(ADMOB_APP_ID)</string>
+	<key>AdMobInterstitialID</key>
+	<string>$(ADMOB_INTERSTITIAL_ID)</string>
+	<key>AppEnvironment</key>
+	<string>$(APP_ENV)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string></string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.720187644456-8cme1nd9ig60cg7mff78sk534b9tonsi</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.720187644456-l7a3qetg266t43gk4uc3c73jpit8bi8b</string>
+			</array>
+		</dict>
+	</array>
+	<key>FirebaseGoogleServiceInfo</key>
+	<string>$(FIREBASE_GOOGLE_SERVICE_INFO)</string>
+	<key>FirebaseRemoteConfigNamespace</key>
+	<string>$(FIREBASE_REMOTE_CONFIG_NAMESPACE)</string>
+	<key>GoogleDriveClientID</key>
+	<string>$(GOOGLE_DRIVE_CLIENT_ID)</string>
+	<key>GoogleDriveScopes</key>
+	<string>$(GOOGLE_DRIVE_SCOPES)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+</dict>
+</plist>

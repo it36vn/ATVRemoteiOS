@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>720187644456-l7a3qetg266t43gk4uc3c73jpit8bi8b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.720187644456-l7a3qetg266t43gk4uc3c73jpit8bi8b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCj7umLBk69lWVngJgJ6DTWqlJa1qa4epE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>720187644456</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.it36vn.androidTV</string>
+	<key>PROJECT_ID</key>
+	<string>android-remote-tv-7872c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>android-remote-tv-7872c.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:720187644456:ios:a37b0b9744f7ed6099f31d</string>
+</dict>
+</plist>
