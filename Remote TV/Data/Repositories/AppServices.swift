@@ -353,13 +353,20 @@ final class FirebaseRemoteConfigService {
     }
 }
 
+@MainActor
 final class AdMobService: NSObject {
     private let isEnabled: Bool
     private let appId: String
     private let interstitialUnitId: String
+    private let adInterval: TimeInterval = 600
+    private let lastShowAdKey = "last_ad_show_time"
+
+    private var adTimerTask: Task<Void, Never>?
+    private var isStarted = false
+    private var isShowingAd = false
 
     #if canImport(GoogleMobileAds)
-    private var interstitialAd: GADInterstitialAd?
+    private var interstitialAd: InterstitialAd?
     private var isLoadingInterstitial = false
     #endif
 
@@ -367,37 +374,120 @@ final class AdMobService: NSObject {
         self.isEnabled = isEnabled
         self.appId = appId
         self.interstitialUnitId = interstitialUnitId
+        super.init()
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(didBecomeActive),
+            name: UIApplication.didBecomeActiveNotification,
+            object: nil
+        )
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        adTimerTask?.cancel()
     }
 
     func configureIfAvailable() {
-        guard isEnabled, !appId.isEmpty else { return }
+        startAutoDisplay()
+    }
+
+    func startAutoDisplay() {
+        guard isEnabled, !appId.isEmpty, !interstitialUnitId.isEmpty, !isStarted else { return }
+        isStarted = true
+
+        if !hasRecordedAdTime {
+            lastShowDate = Date()
+        }
+
         #if canImport(GoogleMobileAds)
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        MobileAds.shared.start(completionHandler: nil)
         loadInterstitialIfNeeded()
+        scheduleNextAdCheck()
         #endif
     }
 
     func showInterstitialIfAvailable() {
-        guard isEnabled, !interstitialUnitId.isEmpty else { return }
-        #if canImport(GoogleMobileAds)
-        DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
-            guard let interstitialAd else {
-                loadInterstitialIfNeeded()
-                return
-            }
+        tryShowInterstitialIfNeeded()
+    }
 
-            let rootViewController = UIApplication.shared.topMostViewController
-            do {
-                try interstitialAd.canPresent(fromRootViewController: rootViewController)
-                interstitialAd.present(fromRootViewController: rootViewController)
-                self.interstitialAd = nil
-            } catch {
-                self.interstitialAd = nil
-                loadInterstitialIfNeeded()
-            }
+    private var hasRecordedAdTime: Bool {
+        UserDefaults.standard.object(forKey: lastShowAdKey) != nil
+    }
+
+    private var lastShowDate: Date {
+        get {
+            let timestamp = UserDefaults.standard.double(forKey: lastShowAdKey)
+            guard !timestamp.isZero else { return Date() }
+            return Date(timeIntervalSince1970: timestamp)
+        }
+        set {
+            UserDefaults.standard.set(newValue.timeIntervalSince1970, forKey: lastShowAdKey)
+        }
+    }
+
+    private var nextShowDate: Date {
+        lastShowDate.addingTimeInterval(adInterval)
+    }
+
+    private func canShowInterstitial() -> Bool {
+        Date() >= nextShowDate && !isShowingAd && UIApplication.shared.applicationState == .active
+    }
+
+    private func tryShowInterstitialIfNeeded() {
+        guard isEnabled, !interstitialUnitId.isEmpty else { return }
+        guard canShowInterstitial() else {
+            scheduleNextAdCheck()
+            return
+        }
+
+        #if canImport(GoogleMobileAds)
+        guard let interstitialAd else {
+            loadInterstitialIfNeeded()
+            scheduleNextAdCheck(after: 30)
+            return
+        }
+
+        guard let rootViewController = UIApplication.shared.topMostViewController else {
+            scheduleNextAdCheck(after: 5)
+            return
+        }
+
+        do {
+            try interstitialAd.canPresent(from: rootViewController)
+            isShowingAd = true
+            lastShowDate = Date()
+            self.interstitialAd = nil
+            interstitialAd.present(from: rootViewController)
+        } catch {
+            self.interstitialAd = nil
+            loadInterstitialIfNeeded()
+            scheduleNextAdCheck(after: 30)
         }
         #endif
+    }
+
+    private func scheduleNextAdCheck(after delay: TimeInterval? = nil) {
+        adTimerTask?.cancel()
+
+        let nextDelay = delay ?? max(nextShowDate.timeIntervalSinceNow, 0)
+        adTimerTask = Task { [weak self] in
+            let nanoseconds = UInt64(nextDelay * 1_000_000_000)
+            try? await Task.sleep(nanoseconds: nanoseconds)
+
+            await MainActor.run {
+                guard let self, !Task.isCancelled else { return }
+                self.tryShowInterstitialIfNeeded()
+            }
+        }
+    }
+
+    @objc private func didBecomeActive() {
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 1_000_000_000)
+            tryShowInterstitialIfNeeded()
+        }
     }
 
     #if canImport(GoogleMobileAds)
@@ -405,26 +495,40 @@ final class AdMobService: NSObject {
         guard isEnabled, !interstitialUnitId.isEmpty, interstitialAd == nil, !isLoadingInterstitial else { return }
         isLoadingInterstitial = true
 
-        GADInterstitialAd.load(withAdUnitID: interstitialUnitId, request: GADRequest()) { [weak self] ad, _ in
-            guard let self else { return }
-            self.interstitialAd = ad
-            self.interstitialAd?.fullScreenContentDelegate = self
-            self.isLoadingInterstitial = false
+        InterstitialAd.load(with: interstitialUnitId, request: Request()) { [weak self] ad, error in
+            Task { @MainActor [weak self, ad, error] in
+                guard let self else { return }
+                self.isLoadingInterstitial = false
+
+                if let error {
+                    print(error.localizedDescription)
+                    self.scheduleNextAdCheck(after: 30)
+                    return
+                }
+
+                self.interstitialAd = ad
+                self.interstitialAd?.fullScreenContentDelegate = self
+                self.tryShowInterstitialIfNeeded()
+            }
         }
     }
     #endif
 }
 
 #if canImport(GoogleMobileAds)
-extension AdMobService: GADFullScreenContentDelegate {
-    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+extension AdMobService: FullScreenContentDelegate {
+    func ad(_ ad: any FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Error) {
+        isShowingAd = false
         interstitialAd = nil
         loadInterstitialIfNeeded()
+        scheduleNextAdCheck(after: 30)
     }
 
-    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+    func adDidDismissFullScreenContent(_ ad: any FullScreenPresentingAd) {
+        isShowingAd = false
         interstitialAd = nil
         loadInterstitialIfNeeded()
+        scheduleNextAdCheck()
     }
 }
 #endif

@@ -8,6 +8,8 @@
 	<string>$(ADMOB_INTERSTITIAL_ID)</string>
 	<key>AppEnvironment</key>
 	<string>$(APP_ENV)</string>
+	<key>GADApplicationIdentifier</key>
+	<string>$(ADMOB_APP_ID)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

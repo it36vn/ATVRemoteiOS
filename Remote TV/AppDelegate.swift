@@ -50,3 +50,22 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         return configuration
     }
 }
+
+
+extension UIApplication {
+    func topViewController(base: UIViewController? = UIApplication.shared.connectedScenes.compactMap{ $0 as? UIWindowScene}.flatMap{ $0.windows }.first(where: { $0.isKeyWindow })?.rootViewController) -> UIViewController? {
+        if let navigationController = base as? UINavigationController {
+            return topViewController(base: navigationController.visibleViewController)
+        }
+        
+        if let tabController = base as? UITabBarController {
+            return topViewController(base: tabController.selectedViewController)
+        }
+        
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        
+        return base
+    }
+}

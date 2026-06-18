@@ -41,8 +41,6 @@ final class AppViewModel: ObservableObject {
     private let removeRecentUseCase = RemoveRecentUseCase()
     private let removeFavoriteUseCase = RemoveFavoriteUseCase()
 
-    private var adTimerTask: Task<Void, Never>?
-
     init() {
         let config = AppConfig.current
         let googleServiceConfig = GoogleServiceInfoService().loadConfig(plistName: config.firebaseGoogleServiceInfo)
@@ -90,7 +88,7 @@ final class AppViewModel: ObservableObject {
 
     func onLaunch() {
         syncFromGoogleDriveIfNeeded()
-        startAdAutoDisplay()
+        adMobService.startAutoDisplay()
         fetchRemoteSettings()
         requestNotificationPermissionOnFirstLaunch()
 
@@ -352,17 +350,6 @@ final class AppViewModel: ObservableObject {
         favorites = snapshot.favorites
         repository.saveRecents(snapshot.recents)
         repository.saveFavorites(snapshot.favorites)
-    }
-
-    private func startAdAutoDisplay() {
-        adTimerTask?.cancel()
-        adTimerTask = Task {
-            while !Task.isCancelled {
-                try? await Task.sleep(nanoseconds: 600_000_000_000)
-                if Task.isCancelled { break }
-                adMobService.showInterstitialIfAvailable()
-            }
-        }
     }
 
     private func requestNotificationPermissionOnFirstLaunch() {
